@@ -1,0 +1,265 @@
+*------------------------------------------------------------*
+User:                u63731749
+Date:                07 January 2024
+Time:                06:02:57
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+Role         Level         Count
+ 
+ID         INTERVAL           2
+INPUT      INTERVAL          10
+INPUT      NOMINAL            6
+INPUT      ORDINAL            2
+TARGET     NOMINAL            1
+ 
+ 
+ 
+ 
+Model Events
+ 
+                                  Number
+                   Measurement      of
+Target    Event       Level       Levels      Order       Label
+ 
+Churn       1        NOMINAL         2      Descending
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type         Variable    Label
+ 
+TARGET       Churn
+PREDICTED    P_Churn1    Predicted: Churn=1
+RESIDUAL     R_Churn1    Residual: Churn=1
+PREDICTED    P_Churn0    Predicted: Churn=0
+RESIDUAL     R_Churn0    Residual: Churn=0
+FROM         F_Churn     From: Churn
+INTO         I_Churn     Into: Churn
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+Variable Importance
+ 
+Obs    NAME                               LABEL                                  NRULES    IMPORTANCE    VIMPORTANCE     RATIO
+ 
+  1    IMP_Tenure                         Imputed Tenure                           28        1.00000       1.00000      1.00000
+  2    Complain                                                                    22        0.52749       0.45811      0.86848
+  3    NumberOfAddress                                                             17        0.42172       0.10640      0.25231
+  4    CashbackAmount                                                              13        0.35356       0.13768      0.38941
+  5    IMP_DaySinceLastOrder              Imputed DaySinceLastOrder                12        0.33988       0.15364      0.45204
+  6    PreferedOrderCat                                                            10        0.28264       0.22588      0.79917
+  7    MaritalStatus                                                               10        0.26933       0.20096      0.74615
+  8    SatisfactionScore                                                            7        0.23884       0.06558      0.27460
+  9    IMP_WarehouseToHome                Imputed WarehouseToHome                   8        0.21064       0.04467      0.21205
+ 10    CityTier                                                                     5        0.15640       0.06981      0.44637
+ 11    IMP_CouponUsed                     Imputed CouponUsed                        4        0.14550       0.02461      0.16917
+ 12    IMP_OrderCount                     Imputed OrderCount                        4        0.14494       0.07774      0.53638
+ 13    PreferredPaymentMode                                                         5        0.14100       0.08108      0.57505
+ 14    NumberOfDeviceRegistered                                                     4        0.12905       0.07117      0.55147
+ 15    IMP_OrderAmountHikeFromlastYear    Imputed OrderAmountHikeFromlastYear       1        0.05382       0.03648      0.67789
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=Churn Target Label=' '
+ 
+   Fit
+Statistics    Statistics Label                    Train    Validation
+ 
+  _NOBS_      Sum of Frequencies                3939.00      1691.00
+  _SUMW_      Sum of Case Weights Times Freq    7878.00      3382.00
+  _MISC_      Misclassification Rate               0.11         0.11
+  _MAX_       Maximum Absolute Error               0.96         0.97
+  _SSE_       Sum of Squared Errors              616.16       252.93
+  _ASE_       Average Squared Error                0.08         0.07
+  _RASE_      Root Average Squared Error           0.28         0.27
+  _DIV_       Divisor for ASE                   7878.00      3382.00
+  _DFT_       Total Degrees of Freedom          3939.00          .
+ 
+ 
+ 
+ 
+Classification Table
+ 
+Data Role=TRAIN Target Variable=Churn Target Label=' '
+ 
+                       Target        Outcome     Frequency       Total
+Target    Outcome    Percentage    Percentage      Count      Percentage
+ 
+  0          0         90.3955       97.6801        3200        81.2389
+  1          0          9.6045       51.2821         340         8.6316
+  0          1         19.0476        2.3199          76         1.9294
+  1          1         80.9524       48.7179         323         8.2001
+ 
+ 
+Data Role=VALIDATE Target Variable=Churn Target Label=' '
+ 
+                       Target        Outcome     Frequency       Total
+Target    Outcome    Percentage    Percentage      Count      Percentage
+ 
+  0          0         90.0654       98.0085        1378        81.4902
+  1          0          9.9346       53.3333         152         8.9888
+  0          1         17.3913        1.9915          28         1.6558
+  1          1         82.6087       46.6667         133         7.8652
+ 
+ 
+ 
+ 
+Event Classification Table
+ 
+Data Role=TRAIN Target=Churn Target Label=' '
+ 
+  False       True        False       True
+Negative    Negative    Positive    Positive
+ 
+   340        3200         76          323
+ 
+ 
+Data Role=VALIDATE Target=Churn Target Label=' '
+ 
+  False       True        False       True
+Negative    Negative    Positive    Positive
+ 
+   152        1378         28          133
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=Churn Target Label=' '
+ 
+                                                                                           Mean
+                               Cumulative        %       Cumulative      Number of      Posterior
+Depth       Gain      Lift        Lift       Response    % Response    Observations    Probability
+ 
+   5     448.880    5.48880      5.48880      92.3858      92.3858          197          0.78194
+  10     382.532    4.16184      4.82532      70.0508      81.2183          197          0.58208
+  15     314.173    2.77456      4.14173      46.7005      69.7124          197          0.43465
+  20     276.978    2.65393      3.76978      44.6701      63.4518          197          0.30101
+  25     226.915    1.26665      3.26915      21.3198      55.0254          197          0.21253
+  30     184.996    0.75396      2.84996      12.6904      47.9695          197          0.16861
+  35     152.468    0.57301      2.52468       9.6447      42.4946          197          0.13416
+  40     127.318    0.51269      2.27318       8.6294      38.2614          197          0.10852
+  45     106.417    0.39206      2.06417       6.5990      34.7434          197          0.09244
+  50      89.092    0.33174      1.89092       5.5838      31.8274          197          0.08072
+  55      74.095    0.24127      1.74095       4.0609      29.3032          197          0.07214
+  60      61.095    0.18095      1.61095       3.0457      27.1151          197          0.06552
+  65      49.399    0.09047      1.49399       1.5228      25.1464          197          0.06024
+  70      40.667    0.27142      1.40667       4.5685      23.6766          197          0.05507
+  75      32.495    0.18095      1.32495       3.0457      22.3012          197          0.04980
+  80      24.214    0.00000      1.24214       0.0000      20.9074          197          0.04483
+  85      16.908    0.00000      1.16908       0.0000      19.6775          197          0.04080
+  90      11.083    0.12063      1.11083       2.0305      18.6971          197          0.03706
+  95       5.236    0.00000      1.05236       0.0000      17.7131          197          0.03271
+ 100       0.000    0.00000      1.00000       0.0000      16.8317          196          0.02662
+ 
+ 
+Data Role=VALIDATE Target Variable=Churn Target Label=' '
+ 
+                                                                                           Mean
+                               Cumulative        %       Cumulative      Number of      Posterior
+Depth       Gain      Lift        Lift       Response    % Response    Observations    Probability
+ 
+   5     430.510    5.30510      5.30510      89.4118      89.4118          85           0.78448
+  10     381.647    4.32784      4.81647      72.9412      81.1765          85           0.58515
+  15     355.512    4.02619      4.55512      67.8571      76.7717          84           0.41938
+  20     299.056    2.30353      3.99056      38.8235      67.2566          85           0.28098
+  25     236.643    0.84762      3.36643      14.2857      56.7376          84           0.20243
+  30     187.323    0.41882      2.87323       7.0588      48.4252          85           0.16328
+  35     154.572    0.56508      2.54572       9.5238      42.9054          84           0.12688
+  40     127.868    0.41882      2.27868       7.0588      38.4047          85           0.10685
+  45     105.055    0.21190      2.05055       3.5714      34.5598          84           0.09107
+  50      90.063    0.55843      1.90063       9.4118      32.0331          85           0.08077
+  55      73.985    0.13961      1.73985       2.3529      29.3233          85           0.07071
+  60      60.171    0.07063      1.60171       1.1905      26.9951          84           0.06491
+  65      48.873    0.13961      1.48873       2.3529      25.0909          85           0.05965
+  70      40.816    0.35317      1.40816       5.9524      23.7331          84           0.05471
+  75      31.384    0.00000      1.31384       0.0000      22.1434          85           0.04978
+  80      23.666    0.07063      1.23666       1.1905      20.8426          84           0.04549
+  85      16.356    0.00000      1.16356       0.0000      19.6106          85           0.04157
+  90      10.714    0.14127      1.10714       2.3810      18.6597          84           0.03756
+  95       5.227    0.06980      1.05227       1.1765      17.7349          85           0.03330
+ 100       0.000    0.00000      1.00000       0.0000      16.8539          84           0.02686
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=Churn Target Label=' '
+ 
+ Posterior     Number                     Mean
+Probability      of      Number of     Posterior
+   Range       Events    Nonevents    Probability    Percentage
+ 
+ 0.95-1.00        1            0        0.95467         0.0254
+ 0.90-0.95       12            0        0.91268         0.3046
+ 0.85-0.90       33            1        0.87277         0.8632
+ 0.80-0.85       23            1        0.81992         0.6093
+ 0.75-0.80       44            3        0.77473         1.1932
+ 0.70-0.75       48            8        0.72435         1.4217
+ 0.65-0.70       36            6        0.67823         1.0663
+ 0.60-0.65       47           12        0.62742         1.4978
+ 0.55-0.60       41           10        0.57439         1.2947
+ 0.50-0.55       38           35        0.52308         1.8533
+ 0.45-0.50       38           30        0.47324         1.7263
+ 0.40-0.45       29           45        0.42683         1.8786
+ 0.35-0.40       33           43        0.37744         1.9294
+ 0.30-0.35       43           29        0.32546         1.8279
+ 0.25-0.30       34           49        0.27238         2.1071
+ 0.20-0.25       29          131        0.22152         4.0619
+ 0.15-0.20       42          216        0.17353         6.5499
+ 0.10-0.15       31          342        0.12148         9.4694
+ 0.05-0.10       55         1231        0.06991        32.6479
+ 0.00-0.05        6         1084        0.03759        27.6720
+ 
+ 
+Data Role=VALIDATE Target Variable=Churn Target Label=' '
+ 
+ Posterior     Number                     Mean
+Probability      of      Number of     Posterior
+   Range       Events    Nonevents    Probability    Percentage
+ 
+ 0.95-1.00        1           0         0.95467         0.0591
+ 0.90-0.95        9           0         0.92882         0.5322
+ 0.85-0.90       10           1         0.88112         0.6505
+ 0.80-0.85        9           1         0.82829         0.5914
+ 0.75-0.80       14           1         0.77687         0.8870
+ 0.70-0.75       24           2         0.72325         1.5376
+ 0.65-0.70       20           7         0.67481         1.5967
+ 0.60-0.65       22           5         0.61890         1.5967
+ 0.55-0.60       13           6         0.57662         1.1236
+ 0.50-0.55       11           5         0.52271         0.9462
+ 0.45-0.50       25           9         0.47510         2.0106
+ 0.40-0.45       14          13         0.42785         1.5967
+ 0.35-0.40       21           9         0.37488         1.7741
+ 0.30-0.35       15          14         0.32355         1.7150
+ 0.25-0.30       16          27         0.26970         2.5429
+ 0.20-0.25       11          43         0.22141         3.1934
+ 0.15-0.20       11         106         0.17628         6.9190
+ 0.10-0.15       14         159         0.11997        10.2306
+ 0.05-0.10       21         536         0.06937        32.9391
+ 0.00-0.05        4         462         0.03803        27.5577

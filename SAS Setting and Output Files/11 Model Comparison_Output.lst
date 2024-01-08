@@ -1,0 +1,227 @@
+*------------------------------------------------------------*
+User:                u63731749
+Date:                07 January 2024
+Time:                08:05:21
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+TARGET      NOMINAL          1
+ 
+ 
+ 
+ 
+ 
+                                                                                    BINNED_KS_
+                                                           _KS_PROB_                   PROB_
+Obs    TARGET    TARGETLABEL    _AUR_    _GINI_     KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     Churn                    0.949     0.899    0.75       0.29        0.744        0.317
+ 
+ 
+ 
+ 
+ 
+                                                               _VKS_              _VBINNED_
+                                                               PROB_     _VKS_     KS_PROB_
+Obs    TARGET    TARGETLABEL    _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     Churn                     0.941     0.881     0.768     0.255     0.763      0.305
+ 
+ 
+ 
+ 
+ 
+                                                                                     BINNED_KS_
+                                                            _KS_PROB_                   PROB_
+Obs    TARGET    TARGETLABEL    _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     Churn                    0.914     0.827    0.684      0.193        0.682        0.216
+ 
+ 
+ 
+ 
+ 
+                                                               _VKS_              _VBINNED_
+                                                               PROB_     _VKS_     KS_PROB_
+Obs    TARGET    TARGETLABEL    _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     Churn                     0.92       0.84     0.727     0.212     0.721      0.289
+ 
+ 
+ 
+ 
+ 
+                                                                                     BINNED_KS_
+                                                            _KS_PROB_                   PROB_
+Obs    TARGET    TARGETLABEL    _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     Churn                    0.917     0.833    0.673       0.16        0.673        0.233
+ 
+ 
+ 
+ 
+ 
+                                                              _VKS_              _VBINNED_
+                                                              PROB_     _VKS_     KS_PROB_
+Obs    TARGET    TARGETLABEL    _VAUR_    _VGINI_     VKS    CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     Churn                     0.899     0.798     0.67     0.152     0.664      0.179
+ 
+ 
+ 
+ 
+ 
+                                                                                     BINNED_KS_
+                                                            _KS_PROB_                   PROB_
+Obs    TARGET    TARGETLABEL    _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     Churn                    0.818     0.635    0.562      0.062        0.561        0.206
+ 
+ 
+ 
+ 
+ 
+                                                               _VKS_              _VBINNED_
+                                                               PROB_     _VKS_     KS_PROB_
+Obs    TARGET    TARGETLABEL    _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     Churn                     0.844     0.689     0.632     0.183     0.621      0.206
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fit Statistics
+Model Selection based on Valid: Misclassification Rate (_VMISC_)
+ 
+                                                                     Train:                           Valid:
+                                                     Valid:          Average          Train:          Average
+Selected                                       Misclassification     Squared    Misclassification     Squared
+ Model      Model Node    Model Description           Rate            Error            Rate            Error
+ 
+   Y        Tree2         Decision Tree             0.09698         0.089704         0.11094         0.082430
+            Boost         Gradient Boosting         0.10645         0.078212         0.10561         0.074786
+            HPDMForest    HP Forest                 0.10704         0.073619         0.09952         0.074995
+            Tree          Maximal Tree              0.10999         0.070517         0.09571         0.079098
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fit Statistics Table
+Target: Churn
+ 
+Data Role=Train
+ 
+Statistics                                                          Tree2      Boost    HPDMForest       Tree
+ 
+Train: Bin-Based Two-Way Kolmogorov-Smirnov Probability Cutoff       0.21       0.22         0.32        0.23
+Train: Kolmogorov-Smirnov Statistic                                  0.56       0.68         0.75        0.67
+Train: Average Squared Error                                         0.09       0.08         0.07        0.07
+Train: Roc Index                                                     0.82       0.91         0.95        0.92
+Train: Cumulative Percent Captured Response                         44.63      48.27        54.15       51.28
+Train: Percent Captured Response                                    20.50      20.81        24.59       22.18
+Selection Criterion: Valid: Misclassification Rate                   0.10       0.11         0.11        0.11
+Train: Total Degrees of Freedom                                   3939.00    3939.00          .       3939.00
+Train: Frequency of Classified Cases                                  .          .        3939.00         .
+Train: Divisor for ASE                                            7878.00    7878.00      7878.00     7878.00
+Train: Gain                                                        346.22     382.53       441.34      412.69
+Train: Gini Coefficient                                              0.64       0.83         0.90        0.83
+Train: Bin-Based Two-Way Kolmogorov-Smirnov Statistic                0.56       0.68         0.74        0.67
+Train: Kolmogorov-Smirnov Probability Cutoff                         0.06       0.19         0.29        0.16
+Train: Cumulative Lift                                               4.46       4.83         5.41        5.13
+Train: Lift                                                          4.10       4.16         4.92        4.43
+Train: Maximum Absolute Error                                        0.94       0.96         0.95        0.99
+Train: Misclassification Rate                                        0.11       0.11         0.10        0.10
+Train: Sum of Frequencies                                         3939.00    3939.00      3939.00     3939.00
+Train: Root Average Squared Error                                    0.30       0.28         0.27        0.27
+Train: Cumulative Percent Response                                  75.11      81.22        91.12       86.29
+Train: Percent Response                                             68.99      70.05        82.74       74.63
+Train: Sum of Squared Errors                                       706.69     616.16       579.97      555.53
+Train: Sum of Case Weights Times Freq                                 .      7878.00          .           .
+Train: Number of Wrong Classifications                                .          .         392.00         .
+ 
+ 
+Data Role=Valid
+ 
+Statistics                                                          Tree2      Boost    HPDMForest       Tree
+ 
+Valid: Kolmogorov-Smirnov Statistic                                  0.63       0.73         0.77        0.67
+Valid: Average Squared Error                                         0.08       0.07         0.07        0.08
+Valid: Roc Index                                                     0.84       0.92         0.94        0.90
+Valid: Bin-Based Two-Way Kolmogorov-Smirnov Probability Cutoff       0.21       0.29         0.31        0.18
+Valid: Cumulative Percent Captured Response                         48.13      48.42        52.63       47.51
+Valid: Percent Captured Response                                    24.55      21.75        23.86       20.73
+Valid: Frequency of Classified Cases                                  .          .        1691.00         .
+Valid: Divisor for ASE                                            3382.00    3382.00      3382.00     3382.00
+Valid: Gain                                                        378.80     381.65       423.53      372.63
+Valid: Gini Coefficient                                              0.69       0.84         0.88        0.80
+Valid: Bin-Based Two-Way Kolmogorov-Smirnov Statistic                0.62       0.72         0.76        0.66
+Valid: Kolmogorov-Smirnov Probability Cutoff                         0.18       0.21         0.26        0.15
+Valid: Cumulative Lift                                               4.79       4.82         5.24        4.73
+Valid: Lift                                                          4.88       4.33         4.75        4.12
+Valid: Maximum Absolute Error                                        1.00       0.97         0.95        1.00
+Valid: Misclassification Rate                                        0.10       0.11         0.11        0.11
+Valid: Sum of Frequencies                                         1691.00    1691.00      1691.00     1691.00
+Valid: Root Average Squared Error                                    0.29       0.27         0.27        0.28
+Valid: Cumulative Percent Response                                  80.70      81.18        88.24       79.66
+Valid: Percent Response                                             82.31      72.94        80.00       69.51
+Valid: Sum of Squared Errors                                       278.78     252.93       253.63      267.51
+Valid: Sum of Case Weights Times Freq                                 .      3382.00          .           .
+Valid: Number of Wrong Classifications                                .          .         181.00         .
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Event Classification Table
+Model Selection based on Valid: Misclassification Rate (_VMISC_)
+ 
+                                   Data                  Target      False       True        False       True
+Model Node    Model Description    Role        Target    Label     Negative    Negative    Positive    Positive
+ 
+HPDMForest    HP Forest            TRAIN       Churn                  375        3259          17         288
+HPDMForest    HP Forest            VALIDATE    Churn                  169        1394          12         116
+Boost         Gradient Boosting    TRAIN       Churn                  340        3200          76         323
+Boost         Gradient Boosting    VALIDATE    Churn                  152        1378          28         133
+Tree          Maximal Tree         TRAIN       Churn                  309        3208          68         354
+Tree          Maximal Tree         VALIDATE    Churn                  145        1365          41         140
+Tree2         Decision Tree        TRAIN       Churn                  294        3133         143         369
+Tree2         Decision Tree        VALIDATE    Churn                  116        1358          48         169
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
