@@ -4,4 +4,4 @@ The project involves working with a dataset of customer transactions from an e-c
 
 Tools Used & Their Roles
 
-Three tools used in this project include Talend Data Preparation, Talend Data Integration and SAS Enterprise Miner. The role of Talend Data Preparation is to perform basic data preprocessing. The role of Talend Data Integration is to combine several datasets into one. The role of SAS Enterprise Miner is to perform data mining, data preprocessing and predictive modelling.
+Three tools used in this project include Talend Data Preparation, Talend Data Integration and SAS Enterprise Miner. The role of Talend Data Preparation is to perform basic data preprocessing. The role of Talend Data Integration is to combine two datasets into one. The role of SAS Enterprise Miner is to perform data mining, data preprocessing and predictive modelling.
