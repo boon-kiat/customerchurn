@@ -1,0 +1,102 @@
+*------------------------------------------------------------*
+User:                u63731749
+Date:                07 January 2024
+Time:                02:38:29
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          14
+INPUT      NOMINAL            5
+TARGET     NOMINAL            1
+ 
+ 
+ 
+ 
+ 
+The CONTENTS Procedure
+ 
+Data Set Name        EMWS1.FIMPORT_DATA                                       Observations          5630
+Member Type          DATA                                                     Variables             20
+Engine               V9                                                       Indexes               0
+Created              07/01/2024 02:38:28                                      Observation Length    192
+Last Modified        07/01/2024 02:38:28                                      Deleted Observations  0
+Protection                                                                    Compressed            NO
+Data Set Type                                                                 Sorted                NO
+Label
+Data Representation  SOLARIS_X86_64, LINUX_X86_64, ALPHA_TRU64, LINUX_IA64
+Encoding             utf-8  Unicode (UTF-8)
+ 
+ 
+                               Engine/Host Dependent Information
+ 
+Data Set Page Size          131072
+Number of Data Set Pages    9
+First Data Page             1
+Max Obs per Page            682
+Obs in First Data Page      658
+Number of Data Set Repairs  0
+Filename                    /home/u63731749/customerchurn/Workspaces/EMWS1/fimport_data.sas7bdat
+Release Created             9.0401M7
+Host Created                Linux
+Inode Number                3490808059
+Access Permission           rw-r--r--
+Owner Name                  u63731749
+File Size                   1MB
+File Size (bytes)           1310720
+ 
+ 
+              Alphabetic List of Variables and Attributes
+ 
+ #    Variable                       Type    Len    Format     Informat
+ 
+20    CashbackAmount                 Num       8    BEST12.    BEST32.
+ 2    Churn                          Num       8    BEST12.    BEST32.
+ 5    CityTier                       Num       8    BEST12.    BEST32.
+15    Complain                       Num       8    BEST12.    BEST32.
+17    CouponUsed                     Num       8    BEST12.    BEST32.
+ 1    CustomerID                     Num       8    BEST12.    BEST32.
+19    DaySinceLastOrder              Num       8    BEST12.    BEST32.
+ 8    Gender                         Char      6    $6.        $6.
+ 9    HourSpendOnApp                 Num       8    BEST12.    BEST32.
+13    MaritalStatus                  Char      8    $8.        $8.
+14    NumberOfAddress                Num       8    BEST12.    BEST32.
+10    NumberOfDeviceRegistered       Num       8    BEST12.    BEST32.
+16    OrderAmountHikeFromlastYear    Num       8    BEST12.    BEST32.
+18    OrderCount                     Num       8    BEST12.    BEST32.
+11    PreferedOrderCat               Char     18    $18.       $18.
+ 4    PreferredLoginDevice           Char     12    $12.       $12.
+ 7    PreferredPaymentMode           Char     26    $26.       $26.
+12    SatisfactionScore              Num       8    BEST12.    BEST32.
+ 3    Tenure                         Num       8    BEST12.    BEST32.
+ 6    WarehouseToHome                Num       8    BEST12.    BEST32.
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Exported Attributes for TRAIN Port
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          14
+INPUT      NOMINAL            5
+TARGET     NOMINAL            1
